@@ -1,0 +1,23 @@
+{
+  "name": "agrogps-monitoring-backend",
+  "version": "1.0.0",
+  "description": "The new version of monitoring platform for agrogps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boobo94/agrogps-monitoring-backend.git"
+  },
+  "author": "Bogdan Alexandru Militaru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boobo94/agrogps-monitoring-backend/issues"
+  },
+  "homepage": "https://github.com/boobo94/agrogps-monitoring-backend#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
