@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  node-app:
+    volumes:
+      - ./app:/usr/src/app:ro
+      - /usr/src/app/node_modules
+    command: npm run start:dev
