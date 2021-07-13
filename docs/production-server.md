@@ -1,6 +1,6 @@
 The production server is configured at IP http://188.214.142.137
 
-# Applications set:
+# Applications
 
 - 188.214.142.137 / gps.maproom.ro / alpha.maproom.ro / gps.agroprecizie.ro - the project is located in `/var/www/vhosts/gps3.web/app/webroot/`
 - gpsv1.maproom.ro /  bisomonitoring.com - the project is located in `/var/www/vhosts/gps.web/app/webroot/`
