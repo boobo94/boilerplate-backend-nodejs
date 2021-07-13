@@ -1,7 +1,5 @@
 # agrogps-monitoring-backend
-The new version of monitoring platform for agrogps
-
-The full documentation can be read in `/docs` folder.
+The full documentation can be read in [/docs](https://github.com/boobo94/agrogps-monitoring-backend/tree/main/docs) folder.
 
 ## DEVELOPMENT Mode
 
