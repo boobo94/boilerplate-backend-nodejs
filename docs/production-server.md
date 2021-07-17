@@ -24,3 +24,17 @@ The configuration file can be found at
 ```sh
 $ vi /var/www/apache2/sites-enabled/gps.conf 
 ```
+
+# Databse
+
+## Local Development
+
+### Common errors
+
+1. SELECT list is not in GROUP BY clause and contains nonaggregated column … incompatible with sql_mode=only_full_group_by
+
+Fix: 
+
+```sql
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
