@@ -9,14 +9,6 @@ const db = {};
 
 const sequelize = new Sequelize(process.env.DB_DATABASE, config.DB_USERNAME, config.DB_PASSWORD, config);
 
-try {
-   sequelize.authenticate();
-  console.log('Connection has been established successfully.');
-} catch (error) {
-  console.error('Unable to connect to the database:', error);
-}
-
-
 fs
   .readdirSync(__dirname)
   .filter(file => {
@@ -29,7 +21,7 @@ fs
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
-    db[modelName].associate(db);
+        db[modelName].associate(db);
   }
 });
 
