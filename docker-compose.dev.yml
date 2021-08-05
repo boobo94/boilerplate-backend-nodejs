@@ -1,6 +1,13 @@
 version: "3.8"
 services:
   node-app:
+    restart: always
+    build:
+      context: ./app
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - ./.env
     volumes:
       - ./app:/usr/src/app:ro
       - /usr/src/app/node_modules
