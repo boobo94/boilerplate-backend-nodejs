@@ -22,7 +22,7 @@ export default (sequelize) => {
   });
 
   users.associate = (models) => {
-    users.belongsTo(models.company);
+    users.belongsTo(models.company, { foreignKey: 'company_id' });
   };
 
   return users;
