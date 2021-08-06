@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
-    "start:dev": "nodemon -r esm index.js -L"
+    "build": "babel ./src --out-dir ./dist --source-maps",
+    "start": "babel-node index.js",
+    "start:dev": "nodemon --exec babel-node ./index.js -L"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,18 @@
   },
   "homepage": "https://github.com/boobo94/agrogps-monitoring-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "esm": "^3.2.25",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
     "eslint": "^7.31.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
