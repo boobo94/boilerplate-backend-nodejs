@@ -21,10 +21,8 @@ export default (sequelize) => {
     },
   });
 
-  // eslint-disable-next-line no-unused-vars
   users.associate = (models) => {
-    // todo:  uncomment the line below
-    // admin.belongsTo(models.company);
+    users.belongsTo(models.company);
   };
 
   return users;
