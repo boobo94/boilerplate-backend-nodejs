@@ -10,10 +10,14 @@ The full documentation can be read in [/docs](https://github.com/boobo94/agrogps
 
 # Run the project
 
-## DEVELOPMENT Mode
-
-Run docker file
+**Development mode**
 
 ```sh
-$ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+$ sh scripts/start-dev.sh
+```
+
+**Production mode**
+
+```sh
+$ sh scripts/start-prod.sh
 ```
