@@ -1,11 +1,11 @@
-import dbConnection from './models/index';
+import { sequelize } from './models/index';
 
 // eslint-disable-next-line import/prefer-default-export
 export const InitDB = async () => {
   try {
     // sync database models
 
-    await dbConnection.sequelize
+    await sequelize
       .sync({
         force: false,
       });
