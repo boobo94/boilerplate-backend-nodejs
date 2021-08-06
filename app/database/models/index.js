@@ -1,15 +1,8 @@
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable global-require */
-/* eslint-disable strict */
+import Sequelize from 'sequelize';
+import path from 'path';
+import fs from 'fs';
+import config from '../config/config';
 
-'use strict';
-
-const fs = require('fs');
-const path = require('path');
-const Sequelize = require('sequelize');
-
-const basename = path.basename(__filename);
-const config = require(`${__dirname}/../config/config.js`);
 const db = {};
 
 const sequelize = new Sequelize(
@@ -21,9 +14,10 @@ const sequelize = new Sequelize(
 
 fs
   .readdirSync(__dirname)
-  .filter((file) => (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
+  .filter((file) => (file.indexOf('.') !== 0) && (file !== path.basename(__filename)) && (file.slice(-3) === '.js'))
   .forEach((file) => {
-    const model = require(path.join(__dirname, file)).default(sequelize, Sequelize.DataTypes);
+    // eslint-disable-next-line import/no-dynamic-require, global-require
+    const model = require(path.join(__dirname, file)).default(sequelize);
     db[model.name] = model;
   });
 
