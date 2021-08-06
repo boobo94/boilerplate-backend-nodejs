@@ -4,10 +4,10 @@
   "description": "The new version of monitoring platform for agrogps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel ./src --out-dir ./dist --source-maps",
     "start": "babel-node index.js",
-    "start:dev": "nodemon --exec babel-node ./index.js -L"
+    "start:dev": "nodemon --exec babel-node ./index.js -L",
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
