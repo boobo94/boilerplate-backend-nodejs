@@ -1,7 +1,7 @@
 import { Op } from 'sequelize';
 import { user } from '../models';
 
-export function findOne(id) {
+export async function findOne(id) {
   return user.findOne({
     where: {
       user_id: {
@@ -11,7 +11,7 @@ export function findOne(id) {
   });
 }
 
-export function findByUsername(username) {
+export async function findByUsername(username) {
   return user.findOne({
     where: {
       username: {
@@ -21,7 +21,7 @@ export function findByUsername(username) {
   });
 }
 
-export function update(object, id, transaction = null) {
+export async function update(object, id, transaction = null) {
   return user.update(object, {
     where: {
       user_id: {

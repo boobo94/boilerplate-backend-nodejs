@@ -32,6 +32,10 @@ export default (sequelize) => {
       type: DataTypes.CHAR(3),
       defaultValue: 'mp',
     },
+    color: {
+      type: DataTypes.CHAR(10),
+      allowNull: false,
+    },
     deleted: {
       type: DataTypes.INTEGER,
       allowNull: false,
