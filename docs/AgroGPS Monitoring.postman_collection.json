@@ -91,6 +91,200 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "areas",
+			"item": [
+				{
+					"name": "Get One",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{WEB_JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/web/v1/areas/:areaId",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"web",
+								"v1",
+								"areas",
+								":areaId"
+							],
+							"variable": [
+								{
+									"key": "areaId",
+									"value": "50564"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{WEB_JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/web/v1/areas",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"web",
+								"v1",
+								"areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{WEB_JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n    \"points\": [[45.4622867124355,27.89793249451509]],\n    \"rectangle\": [45.448223165307,27.878261018459,45.46229348191,27.898187198073],\n    \"name\": \"83/23 PORUMB_17_1636358.7363749766\",\n    \"name_public\": \"83/23 PORUMB_17_1636358.7363749766\",\n    \"surface\": 1636358.7363749766,\n    \"prefferedMu\": \"ha\",\n     \"color\": \"#bada55\",\n    \"deleted\": 0,\n    \"is_remote\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/web/v1/areas",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"web",
+								"v1",
+								"areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{WEB_JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n    \"points\": [[45.4622867124355,27.89793249451509]],\n    \"name\": \"83/24 PORUMB_17_1636358.7363749766\",\n    \"name_public\": \"83/24 PORUMB_17_1636358.7363749766\"\n \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/web/v1/areas/:areaId",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"web",
+								"v1",
+								"areas",
+								":areaId"
+							],
+							"variable": [
+								{
+									"key": "areaId",
+									"value": "50564"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{WEB_JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/web/v1/areas/:areaId",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"web",
+								"v1",
+								"areas",
+								":areaId"
+							],
+							"variable": [
+								{
+									"key": "areaId",
+									"value": "50564"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
