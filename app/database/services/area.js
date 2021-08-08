@@ -41,6 +41,9 @@ export async function update(object, id, companyId, transaction = null) {
       id: {
         [Op.eq]: id,
       },
+      company_id: {
+        [Op.eq]: companyId,
+      },
     },
     transaction,
   });
