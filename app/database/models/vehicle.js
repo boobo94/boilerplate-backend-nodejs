@@ -55,7 +55,7 @@ export default (sequelize) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    vehicle_image: {
+    vehicule_image: {
       type: DataTypes.CHAR(100),
       allowNull: false,
     },
@@ -82,6 +82,7 @@ export default (sequelize) => {
     vehicle.belongsTo(models.company, { foreignKey: 'company_id' });
     // vehicle.belongsTo(models.device, { foreignKey: 'device_id' }); //todo:add this
     // vehicle.belongsTo(models.division, { foreignKey: 'division_id' }); //todo:add this
+    // vehicle.belongsTo(models.group, { foreignKey: 'group_id' }); //todo:add this
   };
 
   return vehicle;
