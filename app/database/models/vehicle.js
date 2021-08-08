@@ -81,7 +81,7 @@ export default (sequelize) => {
   vehicle.associate = (models) => {
     vehicle.belongsTo(models.company, { foreignKey: 'company_id' });
     // vehicle.belongsTo(models.device, { foreignKey: 'device_id' }); //todo:add this
-    // vehicle.belongsTo(models.division, { foreignKey: 'division_id' }); //todo:add this
+    vehicle.belongsTo(models.division, { foreignKey: 'division_id' });
     // vehicle.belongsTo(models.group, { foreignKey: 'group_id' }); //todo:add this
   };
 
