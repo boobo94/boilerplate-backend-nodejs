@@ -15,7 +15,7 @@ export async function findOne(id, companyId) {
 }
 
 /**
- * Find all areas of company
+ * Find all vehicles of company
  * @param {number} companyId
  * @returns
  */
@@ -50,7 +50,7 @@ export async function update(object, id, companyId, transaction = null) {
 }
 
 /**
- * Remove the area of company
+ * Remove the vehicle of company
  * @param {number} id
  * @param {number} companyId
  * @param {function} transaction
