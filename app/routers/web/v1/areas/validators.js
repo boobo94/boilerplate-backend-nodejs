@@ -1,4 +1,4 @@
-import { body, param } from 'express-validator';
+import { body, param, query } from 'express-validator';
 import checkValidation from '../../../middlewares/check-validation';
 
 export const areaIdParam = [
@@ -150,6 +150,16 @@ export const update = [
     .isInt()
     .withMessage('should be int')
     .toInt(),
+
+  checkValidation,
+];
+
+export const getReports = [
+
+  query(['start_date', 'end_date'])
+    .optional()
+    .isString()
+    .withMessage('should be string'),
 
   checkValidation,
 ];

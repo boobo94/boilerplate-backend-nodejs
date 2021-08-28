@@ -6,6 +6,7 @@ import getOne from './get-one';
 import getAll from './get-all';
 import deleteOne from './delete';
 import update from './update';
+import reports from './reports';
 
 export default Router()
 
@@ -23,6 +24,11 @@ export default Router()
   .get('/',
     checkAuthorization,
     getAll)
+
+  .get('/reports',
+    checkAuthorization,
+    validators.getReports,
+    reports)
 
   .get('/:areaId',
     validators.areaIdParam,
