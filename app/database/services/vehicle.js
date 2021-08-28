@@ -1,4 +1,5 @@
 import { Op } from 'sequelize';
+// eslint-disable-next-line import/named
 import { vehicule } from '../models';
 
 export async function findOne(id, companyId) {
