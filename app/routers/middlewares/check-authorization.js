@@ -15,7 +15,6 @@ export default async (req, res, next) => {
     req.userId = userId;
     req.companyId = user.company_id;
   } catch (err) {
-    console.log('err', err);
     if (err.name === 'TokenExpiredError') {
       return res.status(statusCodes.UNAUTHORIZED).send({ error: errors.JWT_EXPIRED });
     }

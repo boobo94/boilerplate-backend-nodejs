@@ -22,7 +22,6 @@ export default (sequelize) => {
 
   company.associate = (models) => {
     company.hasMany(models.user, { foreignKey: 'user_id' });
-    company.hasMany(models.area, { foreignKey: 'company_id' });
   };
 
   return company;

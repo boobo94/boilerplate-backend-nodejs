@@ -11,7 +11,7 @@ export function GenerateJWT(payload) {
     process.env.JWT_SECRET_KEY,
     {
       algorithm: 'HS256',
-      issuer: 'Agrogps',
+      issuer: 'Boilerplate App',
       expiresIn: '1d',
       audience: 'ws app',
     });

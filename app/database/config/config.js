@@ -8,6 +8,6 @@ module.exports = {
   host: process.env.DB_HOST,
   dialect: process.env.DB_DIALECT,
   define: {
-    timestamps: false, // Doc: https://sequelize.org/master/manual/model-basics.html#timestamps
+    // Doc: https://sequelize.org/master/manual/model-basics.html
   },
 };

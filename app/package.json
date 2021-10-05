@@ -1,7 +1,7 @@
 {
-  "name": "agrogps-monitoring-backend",
+  "name": "boilerplate-backend-nodejs",
   "version": "1.0.0",
-  "description": "The new version of monitoring platform for agrogps",
+  "description": "The boilerplate for backend using nodejs",
   "main": "index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./dist --source-maps",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boobo94/agrogps-monitoring-backend.git"
+    "url": "git+https://github.com/boobo94/boilerplate-backend-nodejs.git"
   },
   "author": "Bogdan Alexandru Militaru",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boobo94/agrogps-monitoring-backend/issues"
+    "url": "https://github.com/boobo94/boilerplate-backend-nodejs/issues"
   },
-  "homepage": "https://github.com/boobo94/agrogps-monitoring-backend#readme",
+  "homepage": "https://github.com/boobo94/boilerplate-backend-nodejs#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",

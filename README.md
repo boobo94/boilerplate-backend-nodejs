@@ -1,23 +1,17 @@
-# AgroGPS Monitoring Backend
+# Boilerplate Backend Nodejs
 
-This is the Backend, if you wanna see the [Front-end click here](https://github.com/boobo94/agrogps-monitoring-web).
+The project use:
 
-The full documentation can be read in [/docs](https://github.com/boobo94/agrogps-monitoring-backend/tree/main/docs) folder.
+- nodejs
+- docker
+- nginx
 
-# Content
 
-1. [Production Server](https://github.com/boobo94/agrogps-monitoring-backend/blob/main/docs/production-server.md)
+# How to run the project
 
-# Run the project
-
-**Development mode**
-
-```sh
-$ sh scripts/start-dev.sh
-```
-
-**Production mode**
+1. Copy the .env.example file to .env file
+2. Use **scripts** handlers
 
 ```sh
-$ sh scripts/start-prod.sh
+sh scripts/start-dev.sh
 ```
