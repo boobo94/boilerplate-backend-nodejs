@@ -26,15 +26,3 @@ services:
       POSTGRES_DB: ${DB_DATABASE}
     ports:
       - ${DB_PORT}:${DB_PORT}
-
-  web-app:
-    restart: always
-    build:
-      context: ./client-app
-      dockerfile: Dockerfile.dev
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./client-app:/usr/src/client-app:ro
-      - /usr/src/client-app/node_modules
-    command: npm run serve
