@@ -6,6 +6,7 @@ The project use:
 - docker
 - nginx
 
+** If you need the complete environment docker + nodejs + postgres + nginx + vuejs check [ complete-docker-node-postgres-vue ](https://github.com/boobo94/boilerplate-backend-nodejs/tree/complete-docker-node-postgres-vue) branch. **
 
 # How to run the project
 
