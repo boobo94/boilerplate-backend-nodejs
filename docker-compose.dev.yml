@@ -1,16 +1,16 @@
 version: "3.8"
 services:
-  node-app:
+  server-app:
     restart: always
     build:
-      context: ./app
+      context: ./server-app
     ports:
       - "${PORT}:${PORT}"
     env_file:
       - ./.env
     volumes:
-      - ./app:/usr/src/app:ro
-      - /usr/src/app/node_modules
+      - ./server-app:/usr/src/server-app:ro
+      - /usr/src/server-app/node_modules
     command: npm run start:dev
     depends_on:
       - postgres

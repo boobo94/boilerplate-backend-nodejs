@@ -1,10 +1,10 @@
 version: "3.8"
 
 services:
-  node-app:
+  server-app:
     restart: always
     build:
-      context: ./app
+      context: ./server-app
     ports:
       - "${PORT}:${PORT}"
     env_file:
