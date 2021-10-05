@@ -17,4 +17,4 @@ COPY . .
 EXPOSE ${PORT}
 
 # the command that starts our app
-CMD ["npm", "start"]
+CMD ["npm", "run", "serve"]
