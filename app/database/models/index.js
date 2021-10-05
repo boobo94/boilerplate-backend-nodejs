@@ -5,12 +5,7 @@ import config from '../config/config';
 
 const db = {};
 
-const sequelize = new Sequelize(
-  config.DB_DATABASE,
-  config.DB_USERNAME,
-  config.DB_PASSWORD,
-  config,
-);
+const sequelize = new Sequelize(config.database, config.username, config.password, config);
 
 fs
   .readdirSync(__dirname)

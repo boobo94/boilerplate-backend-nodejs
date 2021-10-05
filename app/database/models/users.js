@@ -16,7 +16,7 @@ export default (sequelize) => {
       allowNull: false,
     },
     admin: {
-      type: DataTypes.TINYINT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   });
