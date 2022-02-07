@@ -23,19 +23,19 @@ services:
       context: ./client-app
       dockerfile: Dockerfile
 
-  # app_db:
-  #   image: postgres
-  #   restart: always
-  #   env_file:
-  #     - ./.env
-  #   environment:
-  #     POSTGRES_PASSWORD: ${DB_PASSWORD}
-  #     POSTGRES_USER: ${DB_USERNAME}
-  #     POSTGRES_DB: ${DB_DATABASE}
-  #   volumes:
-  #     - database_data:/var/lib/postgresql/data/
-  #   ports:
-  #     - "5432:5432"
+  app_db:
+    image: postgres
+    restart: always
+    env_file:
+      - ./.env
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_DB: ${DB_DATABASE}
+    volumes:
+      - database_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
 
 volumes:
   database_data:
