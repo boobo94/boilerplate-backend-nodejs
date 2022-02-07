@@ -5,6 +5,8 @@ services:
     restart: always
     build:
       context: ./server-app
+    depends_on:
+      - app_db
     env_file:
       - ./.env
     ports:
