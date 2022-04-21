@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import statusCodes from '../../../../services/status-codes';
 import errors from '../../../../locales/errors.json';
-import * as userService from '../../../../database/services/user';
+import * as userService from '../../../../database/repositories/user';
 import { GenerateJWT } from '../../../../services/jwt';
 
 export default async (req, res) => {

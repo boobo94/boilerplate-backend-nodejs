@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import statusCodes from '../../../../services/status-codes';
 import errors from '../../../../locales/errors.json';
-import { update } from '../../../../database/services/user';
+import { update } from '../../../../database/repositories/user';
 
 export default async (req, res) => {
   try {
